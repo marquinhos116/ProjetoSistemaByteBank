@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Modelos
 {
-    public class Class1
+    public interface IAutenticavel
     {
-   
+        bool Autenticar(string senha);
     }
 }
