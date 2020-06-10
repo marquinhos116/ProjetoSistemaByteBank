@@ -13,15 +13,13 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            DateTime datafimPagamento = new DateTime(2020, 06, 03);
+            string textovazio = "";
+            string textonulo = null;
+            string Comtexto = "Palavras";
 
-            DateTime datacorrente = DateTime.Now;
-
-            TimeSpan Diferença = TimeSpan.FromMinutes(20); //datafimPagamento - datacorrente;
-            
-            
-            string Mensagem = "Vencimento em " + TimeSpanHumanizeExtensions.Humanize(Diferença);
-            Console.WriteLine(Mensagem);
+            Console.WriteLine(string.IsNullOrEmpty(textovazio));
+            Console.WriteLine(string.IsNullOrEmpty(textonulo));
+            Console.WriteLine(string.IsNullOrEmpty(Comtexto));
 
             Console.ReadLine();
         }
